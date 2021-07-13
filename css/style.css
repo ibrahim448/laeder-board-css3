@@ -1,42 +1,76 @@
 /* google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* common style */
 body{
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
-    
 }
-hr{
-    border: 1px solid #D1D1D1;
-    border-bottom: none;
-    margin-bottom: 27px;
+
+/* ===================HEADER PART=========================== */
+.header{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* top players strat */
-.top-players{
-    margin-bottom: 21px;
+.container-fluid{
+    width: 870px;
 }
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.logo span{
+    color: crimson;
+    font-size: 24px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu ul li a{
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Top Players */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .container{
-    background-color: #FFFFFF;
     width: 870px;
-    padding: 30px;
-    border-radius: 5px;
-    margin-top: 21px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+.top-player{
+    padding: 0px 30px 20px 30px;
+    margin-top: 20px;
 }
 .section-title{
     color: #562EFF;
     font-size: 24px;
-    margin-top: 3px;
+    margin-top: 0px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 30px;
+    grid-row-gap: 15px;
 }
 .player{
     display: flex;
@@ -46,34 +80,137 @@ main{
     width: 56px;
     height: 56px;
 }
-.player-name{
-    margin-left: 16px;
+.player h3{
+    font-size: 16px;
+    margin-left: 12px;
 }
-
-/* top players end */
-
-/* Top Blog */
+hr{
+    border: 3px solid #D1D1D1;
+    border-bottom: none;
+    margin-top: 20px;
+}
+/* ========================Top Blog============================ */
+.top-blog{
+    padding: 0px 30px 20px 30px;
+    margin-bottom: 20px;
+}
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 31px;
     grid-row-gap: 26px;
 }
 .blog{
     display: flex;
 }
 .thumbnail img{
-    width: 224px;
+    width: 177px;
     height: 127px;
 }
 .blog-info{
     margin-left: 16px;
 }
+.blog-title{
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
 .blog-author{
     color: #9F9F9F;
     font-size: 16px;
+    margin-top: 0;
 }
 .blog-author a{
-    text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+    text-decoration: none;
 }
+/* ========================Lates Course */
+.lates-course{
+    padding: 30px 0px 30px 30px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course{
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    width: 250px;
+    background-color: #FFFFFF;
+    padding: 10px 0px 15px 20px;
+    border-radius: 10px;
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-title{
+    color: #1E1E1E;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.course-author{
+    color: #ED6B4F;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+.fa-star.filled{
+    color: #FFC014;
+    font-size: 12px;
+    margin-top: 14px;
+}
+.empty{
+    font-size: 12px;
+    color: #AEAEAE;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-info span{
+    color: #A2A2A2;
+    font-size: 14px;
+    margin-left: 5px;
+}
+/* .course-clock{
+    color: #FF4A60;
+    background: #FEE5DF;
+    border-radius: 17.6913px;
+    width: 94.83px;
+    height: 29.38px;
+    margin: auto;
+    padding: 6px 0px 0px 17px;
+} */
+.course-clock{
+    color: #FF4A60;
+    background: #FEE5DF;
+    border-radius: 17.6913px;
+    margin-right: 15px;
+    padding: 6px 12px;
+}
+footer{
+    background-color: #562EFF;
+    padding: 10px 5px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 20px;
+}
+footer span{
+    color: crimson;
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
