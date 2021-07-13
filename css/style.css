@@ -202,7 +202,7 @@ footer{
 footer span{
     color: crimson;
 }
-/* ====================Media Mobile========================= */
+/* ====================Mobile Device========================= */
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -221,7 +221,29 @@ footer span{
         grid-row-gap: 20px;
     }
 }
-
+/* ==============Laptop Device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 20px;
+    }
+}
 
 
 
