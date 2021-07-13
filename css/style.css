@@ -202,7 +202,24 @@ footer{
 footer span{
     color: crimson;
 }
-/*
+/* ====================Media Mobile========================= */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: 1fr;
+    }
+    .player, .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
